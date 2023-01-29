@@ -6,7 +6,7 @@ import { Greet } from './Component/Greet';
 function App() {
   return (
     <div className="App">
-      <Greet name='World'/>
+      <Greet name='World' count={10} loggedin={true}/>
     </div>
   );
 }
