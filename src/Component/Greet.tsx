@@ -7,7 +7,7 @@ type greetname = {
     loggedin: boolean
 }
 
-export const Greet = (props: greetname) => {
+export const Greet = ({name, count, loggedin}: greetname) => {
     const person = {
         first: 'Bruce',
         last: 'Wayne'
@@ -27,7 +27,7 @@ export const Greet = (props: greetname) => {
 
     return (
         <div>
-            {props.loggedin ? <h2>Hello {props.name} I'm {props.count} years old</h2> : <h2>
+            {loggedin ? <h2>Hello {name} I'm {count} years old</h2> : <h2>
                 Hello Guest</h2>}
                 <Person name={person}/>
                 <PersonList name={personlist}/>
