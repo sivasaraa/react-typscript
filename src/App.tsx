@@ -6,6 +6,7 @@ import { Status } from './Component/Status';
 import { Heading } from './Component/Heading';
 import { Oscar } from './Component/Oscar';
 import { HandleEvent } from './Component/HandleEvent';
+import { Container } from './Component/Container';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <Status status='success'/> */}
       {/* <Heading>Hello World</Heading> */}
       {/* <Oscar><Heading>Oscar Hero = Leonardo Dicaprio</Heading></Oscar> */}
-      <HandleEvent />
+      {/* <HandleEvent /> */}
+      <Container style={{border: '1px solid black', padding: '1rem'}}/>
     </div>
   );
 }
