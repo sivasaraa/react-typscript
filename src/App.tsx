@@ -8,6 +8,7 @@ import { Oscar } from './Component/Oscar';
 import { HandleEvent } from './Component/HandleEvent';
 import { Container } from './Component/Container';
 import { LoggedIn } from './Component/State/LoggedIn';
+import { User } from './Component/State/User';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <Oscar><Heading>Oscar Hero = Leonardo Dicaprio</Heading></Oscar> */}
       {/* <HandleEvent /> */}
       {/* <Container style={{border: '1px solid black', padding: '1rem'}}/> */}
-      <LoggedIn />
+      {/* <LoggedIn /> */}
+      <User />
     </div>
   );
 }
