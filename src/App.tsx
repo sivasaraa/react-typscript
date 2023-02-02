@@ -9,6 +9,7 @@ import { HandleEvent } from './Component/HandleEvent';
 import { Container } from './Component/Container';
 import { LoggedIn } from './Component/State/LoggedIn';
 import { User } from './Component/State/User';
+import { Counter } from './Component/State/Counter';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <HandleEvent /> */}
       {/* <Container style={{border: '1px solid black', padding: '1rem'}}/> */}
       {/* <LoggedIn /> */}
-      <User />
+      {/* <User /> */}
+      <Counter />
     </div>
   );
 }
