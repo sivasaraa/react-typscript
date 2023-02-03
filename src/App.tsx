@@ -10,6 +10,8 @@ import { Container } from './Component/Container';
 import { LoggedIn } from './Component/State/LoggedIn';
 import { User } from './Component/State/User';
 import { Counter } from './Component/State/Counter';
+import { ThemeContext } from './Component/State/Context/ThemeContext';
+import { Box } from './Component/State/Context/Box';
 
 function App() {
   return (
@@ -22,7 +24,10 @@ function App() {
       {/* <Container style={{border: '1px solid black', padding: '1rem'}}/> */}
       {/* <LoggedIn /> */}
       {/* <User /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <ThemeContext>
+        <Box />
+      </ThemeContext>
     </div>
   );
 }
