@@ -15,6 +15,8 @@ import { Box } from './Component/State/Context/Box';
 import { UserContext } from './Component/State/Context/UserContext';
 import { DomRef } from './Component/Ref/DomRef';
 import { MutableRef } from './Component/Ref/MutableRef';
+import { Private } from './Component/Auth/Private';
+import { Profile } from './Component/Auth/Profile';
 
 function App() {
   return (
@@ -36,7 +38,8 @@ function App() {
       </UserContext> */}
       {/* <DomRef /> */}
       {/* <MutableRef /> */}
-      <Counter message="The count value is"/>
+      {/* <Counter message="The count value is"/> */}
+      <Private isLoggedin={true} component={Profile}/>
     </div>
   );
 }
