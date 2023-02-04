@@ -13,6 +13,8 @@ import { Counter } from './Component/State/Counter';
 import { ThemeContext } from './Component/State/Context/ThemeContext';
 import { Box } from './Component/State/Context/Box';
 import { UserContext } from './Component/State/Context/UserContext';
+import { DomRef } from './Component/Ref/DomRef';
+import { MutableRef } from './Component/Ref/MutableRef';
 
 function App() {
   return (
@@ -29,9 +31,11 @@ function App() {
       {/* <ThemeContext>
         <Box />
       </ThemeContext> */}
-      <UserContext>
+      {/* <UserContext>
         <User />
-      </UserContext>
+      </UserContext> */}
+      {/* <DomRef /> */}
+      <MutableRef />
     </div>
   );
 }
