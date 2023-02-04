@@ -14,7 +14,7 @@ type contextProps = {
     setUser : React.Dispatch<React.SetStateAction<authProps | null>>
 }
 
-export const uContext = React.createContext<contextProps | null>(null)
+export const uContext = React.createContext({} as contextProps)
 
 export const UserContext = (props : propstype) => {
     const [user, setUser] = useState<authProps | null>(null)
