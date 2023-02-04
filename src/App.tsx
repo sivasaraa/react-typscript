@@ -9,7 +9,7 @@ import { HandleEvent } from './Component/HandleEvent';
 import { Container } from './Component/Container';
 import { LoggedIn } from './Component/State/LoggedIn';
 import { User } from './Component/State/Context/User';
-import { Counter } from './Component/State/Counter';
+import Counter from './Component/Class/Counter';
 import { ThemeContext } from './Component/State/Context/ThemeContext';
 import { Box } from './Component/State/Context/Box';
 import { UserContext } from './Component/State/Context/UserContext';
@@ -35,7 +35,8 @@ function App() {
         <User />
       </UserContext> */}
       {/* <DomRef /> */}
-      <MutableRef />
+      {/* <MutableRef /> */}
+      <Counter message="The count value is"/>
     </div>
   );
 }
