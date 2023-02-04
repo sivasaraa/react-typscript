@@ -8,10 +8,11 @@ import { Oscar } from './Component/Oscar';
 import { HandleEvent } from './Component/HandleEvent';
 import { Container } from './Component/Container';
 import { LoggedIn } from './Component/State/LoggedIn';
-import { User } from './Component/State/User';
+import { User } from './Component/State/Context/User';
 import { Counter } from './Component/State/Counter';
 import { ThemeContext } from './Component/State/Context/ThemeContext';
 import { Box } from './Component/State/Context/Box';
+import { UserContext } from './Component/State/Context/UserContext';
 
 function App() {
   return (
@@ -25,9 +26,12 @@ function App() {
       {/* <LoggedIn /> */}
       {/* <User /> */}
       {/* <Counter /> */}
-      <ThemeContext>
+      {/* <ThemeContext>
         <Box />
-      </ThemeContext>
+      </ThemeContext> */}
+      <UserContext>
+        <User />
+      </UserContext>
     </div>
   );
 }
