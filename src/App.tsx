@@ -17,6 +17,7 @@ import { DomRef } from './Component/Ref/DomRef';
 import { MutableRef } from './Component/Ref/MutableRef';
 import { Private } from './Component/Auth/Private';
 import { Profile } from './Component/Auth/Profile';
+import { ListClass } from './Component/Generics/ListClass';
 
 function App() {
   return (
@@ -39,7 +40,8 @@ function App() {
       {/* <DomRef /> */}
       {/* <MutableRef /> */}
       {/* <Counter message="The count value is"/> */}
-      <Private isLoggedin={true} component={Profile}/>
+      {/* <Private isLoggedin={true} component={Profile}/> */}
+      <ListClass />
     </div>
   );
 }
