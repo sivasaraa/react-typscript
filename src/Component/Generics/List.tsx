@@ -1,14 +1,14 @@
 
-type listProps = {
-    listItems : string[] | number[],
-    onclick : (value : string | number) => void 
+type listProps<T> = {
+    listItems : T[],
+    onclick : (value : T) => void 
 }
 
-export const List = ({listItems, onclick}:listProps) => {
+export const List = <T extends {}>({listItems, onclick}: listProps<T>) => {
     return (
         <div>
-            {listItems.map((items) => {
-                return (<div key={items} onClick={() => onclick(items)}>{items}</div>)
+            {listItems.map((item,index) => {
+                return (<div key={index} onClick={() => onclick(item)}>{JSON.stringify(item)}</div>)
             })}
         </div>
     )
