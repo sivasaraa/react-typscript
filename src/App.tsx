@@ -18,6 +18,7 @@ import { MutableRef } from './Component/Ref/MutableRef';
 import { Private } from './Component/Auth/Private';
 import { Profile } from './Component/Auth/Profile';
 import { ListClass } from './Component/Generics/ListClass';
+import { RandomNumber } from './Component/Restriction/RandomNumber';
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
       {/* <MutableRef /> */}
       {/* <Counter message="The count value is"/> */}
       {/* <Private isLoggedin={true} component={Profile}/> */}
-      <ListClass />
+      {/* <ListClass /> */}
+      <RandomNumber value={24} isPositive={true}/>
     </div>
   );
 }
