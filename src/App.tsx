@@ -19,6 +19,7 @@ import { Private } from './Component/Auth/Private';
 import { Profile } from './Component/Auth/Profile';
 import { ListClass } from './Component/Generics/ListClass';
 import { RandomNumber } from './Component/Restriction/RandomNumber';
+import { Toast } from './Component/TemplateLiterals/Toast';
 
 function App() {
   return (
@@ -43,7 +44,8 @@ function App() {
       {/* <Counter message="The count value is"/> */}
       {/* <Private isLoggedin={true} component={Profile}/> */}
       {/* <ListClass /> */}
-      <RandomNumber value={24} isPositive={true}/>
+      {/* <RandomNumber value={24} isPositive={true}/> */}
+      <Toast position='center - center'/>
     </div>
   );
 }
