@@ -20,6 +20,7 @@ import { Profile } from './Component/Auth/Profile';
 import { ListClass } from './Component/Generics/ListClass';
 import { RandomNumber } from './Component/Restriction/RandomNumber';
 import { Toast } from './Component/TemplateLiterals/Toast';
+import Button from './Component/CustomComponent/Button';
 
 function App() {
   return (
@@ -45,7 +46,8 @@ function App() {
       {/* <Private isLoggedin={true} component={Profile}/> */}
       {/* <ListClass /> */}
       {/* <RandomNumber value={24} isPositive={true}/> */}
-      <Toast position='center'/>
+      {/* <Toast position='center'/> */}
+      <Button variant='primary' onClick={() => console.log("clicked")}>Submit</Button>
     </div>
   );
 }
