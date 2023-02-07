@@ -21,6 +21,7 @@ import { ListClass } from './Component/Generics/ListClass';
 import { RandomNumber } from './Component/Restriction/RandomNumber';
 import { Toast } from './Component/TemplateLiterals/Toast';
 import Button from './Component/CustomComponent/Button';
+import { Input } from './Component/CustomComponent/Input';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
       {/* <ListClass /> */}
       {/* <RandomNumber value={24} isPositive={true}/> */}
       {/* <Toast position='center'/> */}
+      <Input type="text" placeholder='Name'/>
       <Button variant='primary' onClick={() => console.log("clicked")}>Submit</Button>
     </div>
   );
