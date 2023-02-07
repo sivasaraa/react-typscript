@@ -45,7 +45,7 @@ function App() {
       {/* <Private isLoggedin={true} component={Profile}/> */}
       {/* <ListClass /> */}
       {/* <RandomNumber value={24} isPositive={true}/> */}
-      <Toast position='center - center'/>
+      <Toast position='center'/>
     </div>
   );
 }
